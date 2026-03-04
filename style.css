@@ -8,8 +8,12 @@ h1,h2 {
 }
 
 nav {
-    background-color: #757060;
+    background-color: #d9d6cd;
     padding: 15px;
+    width: fit-content;
+    margin: auto;
+    
+
 }
 
 nav ul {
@@ -22,11 +26,23 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: rgb(121, 40, 40);
     font-family: Arial;
+    font-weight: 900;
     text-decoration: none;
-    margin-right: 100px;
+    margin-right: 50px;
 }
+
+nav a:hover{
+    color: #ffffff;
+    background-color: #7a1f1f;  /* deeper red */
+    transition: 0.3s;
+    
+    padding: 6px;
+}
+
+
+
 
 #contact {
     color:white;
