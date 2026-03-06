@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("../images/background.jpg") 
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    color: white;
+}
+
+h2, h3 {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* first-letter pseudo-element */
+.intro::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+    color: gold;
+}
+
+/* pseudo-class selector */
+a:hover {
+    color: yellow;
+}
+
+/* contextual selector */
+section p {
+    font-size: 18px;
+}
+
+/* attribute selector */
+a[target="_blank"] {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #7a1f1f;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* code blocks */
+pre {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+#hyperlinks a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}

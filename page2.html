@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/conceptsStyle.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 align="Center">Page 2 Header</h1>
+    <h1 align="Center">Python Concepts</h1>
 
     <nav>
         <ul>
@@ -16,5 +17,85 @@
             <li><a href="page3.html">Contact us</a></li>
         </ul>
     </nav>
+
+    <main>
+        <main>
+    <h2 align="center">Python Tutorials</h2>
+    <p class="intro">
+        Python lists and loops are two important beginner concepts. Lists let you store multiple values in one variable, and loops let you repeat code.
+    </p>
+
+    <section>
+        <h3>Lists</h3>
+        <p>
+            A list is used to store multiple items in one variable. Lists use square brackets and can hold words, numbers, or other data.
+        </p>
+
+        <table>
+            <tr>
+                <th>List Example</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td>fruits = ["apple", "banana", "orange"]</td>
+                <td>Creates a list with 3 items</td>
+            </tr>
+            <tr>
+                <td>fruits[0]</td>
+                <td>Gets the first item in the list</td>
+            </tr>
+            <tr>
+                <td>fruits.append("grape")</td>
+                <td>Adds a new item to the list</td>
+            </tr>
+        </table>
+
+        <pre><code>fruits = ["apple", "banana", "orange"]
+print(fruits[0])
+fruits.append("grape")
+print(fruits)</code></pre>
+    </section>
+
+    <section>
+    <h3>Loops</h3>
+
+    <p>
+        Loops are used to repeat code multiple times. Python mainly uses two types of loops: 
+        <strong>for loops</strong> and <strong>while loops</strong>.
+    </p>
+
+    <p>
+        A <strong>for loop</strong> repeats through a sequence such as a list or range of numbers.
+    </p>
+
+    <pre><code>colors = ["red", "blue", "green"]
+
+for color in colors:
+    print(color)</code></pre>
+
+    <p>
+        A <strong>while loop</strong> continues running as long as a condition remains true.
+    </p>
+
+    <pre><code>count = 1
+
+while count &lt;= 3:
+    print(count)
+    count = count + 1</code></pre>
+
+</section>
+
+        <p>
+            Visit W3Schools for more detailed explanations on: 
+        </p>
+        <p id="hyperlinks"align="center"><a href="https://www.w3schools.com/python/python_lists.asp" target="_blank">Lists</a></p>
+        <p id="hyperlinks" align="center"><a href="https://www.w3schools.com/python/python_loops.asp" target="_blank">Loops</a></p>
+    </section>
+</main>
+    </main>
 </body>
+<footer id="footer">
+    <p>	&#169; 2026 Mueez Tariq | COMP 2511 Assignment 1</p>
+    <p>Mount Royal University</p>
+</footer>
 </html>
