@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact form for inquiries">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contactStyle.css">
+</header>
+<body>
+    <h1>Contact Us</h1>
+    <img id="logo" src="../images/logo.png" alt="Picture of blue and yellow Python Logo" width="50" height="50">
+
+    <nav> <!-- This is the navigation bar -->
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="conceptsPage.html">Concepts</a></li>
+            <li><a class="active" href="contactPage.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+      
+      <a class="goto-form" href="#contactform">Go to form</a>
+        <br><br>
+        <h2 id="contact">For any inquiries, contact using the form below</h2>
+      <p id="info"> * indicates a required field</p>
+
+        <form id="contactform" action="mailto:yourname@email.com" method="post">
+            <fieldset>
+                <legend>Contact Form</legend>
+
+                
+                    <label class="required" for="salutation" >Salutation:</label> 
+                    <select id="salutation" name="salutation" required> 
+                        <option value="">Choose one</option>
+                        <option>Mr.</option>
+                        <option>Ms.</option>
+                        <option>Mrs.</option>
+                    </select>
+               
+
+                <p>
+                    <label class="required"  for="firstName">First name:</label>
+                    <input type="text" id="firstName" name="firstName" required autofocus>
+                </p>
+
+                <p>
+                    <label class="required" for="lastName">Last name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </p>
+
+                <p>
+                    <label class="required" for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="403-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </p>
+
+                <p>
+                    <label class="required" for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="name@email.com" required>
+                </p>
+
+                <p>
+                    <label  for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </p>
+
+                <p class="required">
+                    Preferred Contact Method:
+                    <input type="radio" id="emailContact" name="contactMethod" value="Email" required>
+                    <label  for="emailContact">Email</label>
+
+                    <input type="radio" id="phoneContact" name="contactMethod" value="Phone">
+                    <label for="phoneContact">Phone</label>
+                </p>
+
+                <p class="required">
+                    Reason for Contact:
+                    <input type="checkbox" id="help" name="reason" value="Help" required>
+                    <label  for="help">Help</label>
+
+                    <input type="checkbox" id="feedback" name="reason" value="Feedback">
+                    <label for="feedback">Feedback</label>
+                </p>
+
+                <p>
+                    <label for="message">Body:</label><br>
+                    <textarea id="message" name="message" required></textarea>
+                </p>
+
+                <p>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </p>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer id="footer">
+        <p>&#169; 2026 Mueez Tariq | COMP 2511 Assignment 1</p>
+        <p>Mount Royal University</p>
+    </footer>
+</body>
+</html>

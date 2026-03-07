@@ -11,8 +11,9 @@ main {
     color: white;
 }
 
-h2, h3 {
+h1,h2, h3 {
    font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
 }
 
 p {
@@ -23,7 +24,9 @@ p {
 .intro::first-letter {
     font-size: 32px;
     font-weight: bold;
-    color: gold;
+    color: red;
+
+
 }
 
 /* pseudo-class selector */
@@ -61,23 +64,38 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.15);
+    
+    background-color: rgb(154, 149, 149);
 }
+/* https://www.w3schools.com/cssref/sel_nth-child.php */
+/* Making even rows more opague */
 
 tr:nth-child(odd) {
     background-color: rgba(255, 255, 255, 0.05);
 }
-
+/* leaving odd rows more transparent color */
 /* code blocks */
-pre {
-    background-color: rgba(0, 0, 0, 0.4);
+#code {
+  
     color: white;
     padding: 10px;
-    overflow-x: auto;
+   
 }
 
-#hyperlinks a {
+.hyperlinks a{
     color: white;
     font-weight: bold;
+    text-align: center;
+    
+}
+.hyperlinks {
+    text-align: center;
+}
+
+#figure {
+    text-align: center;
+    margin-top: 20px;
     text-decoration: none;
 }
+
+

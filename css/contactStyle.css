@@ -3,8 +3,28 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1,h2,h3 {
+    color:white;
+    text-align: center;
+}
+
 fieldset {
     color:white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.required::before {
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
+#info {
+    color:white;
+    font-weight: bold;
+}
+
+.goto-form {
+   color:white;
+   text-decoration: none;
+}

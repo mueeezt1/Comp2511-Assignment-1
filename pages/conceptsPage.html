@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2</title>
-    <link rel="stylesheet" href="css/conceptsStyle.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <meta name="description" content="Python concepts page with explanations and examples">
+    <title>Python Concepts with examples</title>
+    <link rel="stylesheet" href="../css/conceptsStyle.css">
+<link rel="stylesheet" href="../css/style.css">
+</header>
 <body>
-    <h1 align="Center">Python Concepts</h1>
+    <h1>Python Concepts</h1>
+    <img id="logo" src="../images/logo.png" alt="Picture of blue and yellow Python Logo" width="50" height="50">
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="page2.html">Concepts</a></li>
-            <li><a href="page3.html">Contact us</a></li>
-        </ul>
-    </nav>
+   <nav> <!-- This is the navigation bar -->
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active" href="conceptsPage.html">Concepts</a></li>
+        <li><a href="contactPage.html">Contact us</a></li>
+    </ul>
+</nav>
 
-    <main>
         <main>
-    <h2 align="center">Python Tutorials</h2>
+            <article>
+    <h2>Python Tutorials</h2>
     <p class="intro">
         Python lists and loops are two important beginner concepts. Lists let you store multiple values in one variable, and loops let you repeat code.
     </p>
@@ -48,12 +50,19 @@
                 <td>fruits.append("grape")</td>
                 <td>Adds a new item to the list</td>
             </tr>
+            <tr>
+                <td colspan="2">print(fruits) shows the whole list</td>
+                
+            </tr>
         </table>
 
-        <pre><code>fruits = ["apple", "banana", "orange"]
-print(fruits[0])
-fruits.append("grape")
-print(fruits)</code></pre>
+    
+        <code id="code">
+fruits = ["apple", "banana", "orange"]<br>
+print(fruits[0])<br>
+fruits.append("grape")<br>
+print(fruits)
+</code>
     </section>
 
     <section>
@@ -86,16 +95,22 @@ while count &lt;= 3:
 </section>
 
         <p>
-            Visit W3Schools for more detailed explanations on: 
+            Click on the links below for more detailed explanations on: 
         </p>
-        <p id="hyperlinks"align="center"><a href="https://www.w3schools.com/python/python_lists.asp" target="_blank">Lists</a></p>
-        <p id="hyperlinks" align="center"><a href="https://www.w3schools.com/python/python_loops.asp" target="_blank">Loops</a></p>
-    </section>
+        <p class="hyperlinks"><a href="https://www.w3schools.com/python/python_lists.asp" target="_blank">Lists</a></p>
+        <p class="hyperlinks"><a href="https://www.w3schools.com/python/python_while_loops.asp" target="_blank">Loops</a></p>
+        <figure id="figure">
+    <a href="https://www.w3schools.com/python/" target="_blank">
+        <img src="../images/w3schools.png" width="50" height="50">
+    </a>
+    <figcaption>W3Schools website logo</figcaption>
+</figure>
+    </article>
 </main>
-    </main>
-</body>
-<footer id="footer">
+    <footer class="footer">
     <p>	&#169; 2026 Mueez Tariq | COMP 2511 Assignment 1</p>
-    <p>Mount Royal University</p>
+    <p>Mount Royal University <img class="footer-logo" src="../images/mru.jpg" alt="Mount royal university logo"></p>
 </footer>
+</body>
+
 </html>

@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the homepage of my website for Comp2511"
     <title>Homepage</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/indexStyle.css">
+</header>
 <body>
-    <h1 align="Center">Mueez Tariq</h1>
+    <h1>Mueez Tariq</h1>
             <img id="logo" src="images/logo.png" alt="Picture of blue and yellow Python Logo" width="50" height="50">
-    <h2 align="center">Comp2511: Assignment 1</h2>
+            <!-- https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.python.org%2Fcommunity%2Flogos%2F&opi=89978449 -->
+    <h2>Comp2511: Assignment 1</h2>
      
 
-    <nav>
+    <nav> <!-- This is the navigation bar -->
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="page2.html">Concepts</a></li>
-            <li><a href="page3.html">Contact us</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="pages/conceptsPage.html">Concepts</a></li>
+            <li><a href="pages/contactPage.html">Contact us</a></li>
         </ul>
     </nav>
 
     <main>
         <br> <br> <br> <br>
-        <h2 id="welcome" align="center"> Welcome to my homepage! </h2>
-        <p id="welcome" align="center"> This is the homepage for my assignment 1 submission. Please navigate to the other pages using the links above. </p>
+        <h2 class="welcome"> Welcome to my homepage! </h2>
+        <p class="welcome"> This is the homepage for my assignment 1 submission. Please navigate to the other pages using the links above. </p>
         
     </main>
-</body>
-<br>
-<br>
-
-<footer id="footer">
+    <footer class="footer">
     <p>	&#169; 2026 Mueez Tariq | COMP 2511 Assignment 1</p>
     <p>Mount Royal University</p>
 </footer>
+</body>
+
+
+
 </html>
